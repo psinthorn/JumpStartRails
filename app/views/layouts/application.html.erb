@@ -10,6 +10,12 @@
   </head>
 
   <body>
+  <%= render "partials/navbar" %>
+    <div class="container">
+    <%= render "layouts/notice" %>
     <%= yield %>
+    </div>
+    <%= render "partials/maps"%>
+  <%= render "partials/footer"%>  
   </body>
 </html>
