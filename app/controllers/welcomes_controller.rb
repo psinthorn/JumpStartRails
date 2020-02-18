@@ -25,7 +25,7 @@ class WelcomesController < ApplicationController
   # POST /welcomes.json
   def create
     @welcome = Welcome.new(welcome_params)
-
+   
     respond_to do |format|
       if @welcome.save
         format.html { redirect_to @welcome, notice: 'Welcome was successfully created.' }
